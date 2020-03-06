@@ -47,3 +47,9 @@ const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
 // }
 
 //String repeat refactor
+// function repeatStr (n, s) {
+//   return s.repeat(n);
+// }
+
+//String Repeat 2nd refactor
+const repeatStr = (n,s) => s.repeat(n)
