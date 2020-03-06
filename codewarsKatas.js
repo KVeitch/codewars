@@ -15,3 +15,5 @@ function even_or_odd(number) {
   number % 2 === 0 ? parity = 'Even' : parity = 'Odd';
   return parity;
 }
+
+//Exes and Ohs
