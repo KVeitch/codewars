@@ -36,3 +36,5 @@ function XO(str) {
 // };
 //Ones and Zeros refactor
 const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
+
+//String repeat
