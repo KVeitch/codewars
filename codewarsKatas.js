@@ -38,3 +38,12 @@ function XO(str) {
 const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
 
 //String repeat
+// function repeatStr (n, s) {
+//   let chain = [];
+//   for (let i = 0 ; i < n ; i++){
+//   chain.push(s)
+//   } 
+//   return `${chain.join('')}`;
+// }
+
+//String repeat refactor
