@@ -31,6 +31,8 @@ function XO(str) {
 }
 
 //Ones and Zeros
-const binaryArrayToNumber = arr => {
-  return parseInt(arr.join(''), 2)
-};
+// const binaryArrayToNumber = arr => {
+//   return parseInt(arr.join(''), 2)
+// };
+//Ones and Zeros refactor
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
