@@ -17,3 +17,16 @@ function even_or_odd(number) {
 }
 
 //Exes and Ohs
+function XO(str) {
+  let xs = 0;
+  let os = 0;
+  let counts = str.toLowerCase().split('');
+  counts.forEach(function(letter) { 
+   if (letter === 'x'){
+     xs++;
+   } else if (letter === 'o') {
+     os++;
+   }})
+  return xs === os ? true : false;
+}
+
