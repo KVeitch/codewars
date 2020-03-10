@@ -1,3 +1,12 @@
+//Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+  findSmallestInt(integers) {
+    integers.sort((a, b) => a-b);
+    return integers[0];
+  }
+}
+
 //Sum of positive
 function positiveSum(arr) {
   let sum = 0;
