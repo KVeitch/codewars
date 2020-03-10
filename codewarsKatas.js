@@ -1,3 +1,5 @@
+
+
 //Persistent Bugger.
 function persistence(num) {
   let product = 1;
