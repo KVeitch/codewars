@@ -1,3 +1,10 @@
+//Sum of positive
+function positiveSum(arr) {
+  let sum = 0;
+  arr.length > 0 ? arr.forEach(num => num > 0 && (sum = sum + num)) : sum = 0;
+  return sum;
+}
+
 //Counting sheep...
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.filter(sheep => sheep).length
