@@ -1,4 +1,7 @@
-
+//Counting sheep...
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter(sheep => sheep).length
+}
 
 //Convert number to reversed array of digits
 function digitize(n) {
