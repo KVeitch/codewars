@@ -1,5 +1,8 @@
-//Find the smallest integer in the array
 
+
+
+
+//Find the smallest integer in the array
 class SmallestIntegerFinder {
   findSmallestInt(integers) {
     integers.sort((a, b) => a-b);
