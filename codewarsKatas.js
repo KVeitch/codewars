@@ -1,6 +1,10 @@
+//A Needle in the Haystack
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.findIndex(str => str === 'needle')}`
+}
+
 //Grasshopper - Summation
 const summation = (num) => (num + 1) * num / 2;
-
 
 //Remove String Space
 function noSpace(x){
