@@ -1,4 +1,25 @@
+//Convert number to reversed array of digits
 
+function digitize(n) {
+  return n.toString().split('').reverse().map(el => parseInt(el))
+}
+//WeIrD StRiNg CaSe
+function toWeirdCase(string){
+  let words = string.toLowerCase().split(' ');
+  
+  words.forEach(function(word, index) {
+    word = word.split('');
+    word.forEach(function(letter, index) {
+      if(index % 2 === 0){
+        letter = letter.toUpperCase();
+        word.splice(index,1,letter);
+      }      
+    })
+    word = word.join('');
+    words.splice(index,1,word);
+  })
+  return words.join(' ');
+}
 
 //Persistent Bugger.
 function persistence(num) {
