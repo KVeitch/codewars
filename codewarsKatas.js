@@ -1,5 +1,6 @@
-//Convert number to reversed array of digits
 
+
+//Convert number to reversed array of digits
 function digitize(n) {
   return n.toString().split('').reverse().map(el => parseInt(el))
 }
