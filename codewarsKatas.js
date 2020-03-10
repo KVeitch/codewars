@@ -1,3 +1,8 @@
+//Remove First and Last Character
+function removeChar(str){
+ return str.slice(1,-1)
+};
+
 //Does my number look big in this?
 function narcissistic(value) {
   let sumCompare = 0;
@@ -17,7 +22,6 @@ function GetSum( a,b ) {
   
   return sum;
 }
-
 
 //Sum of two lowest positive integers
 function sumTwoSmallestNumbers(numbers) {  
