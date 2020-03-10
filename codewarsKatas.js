@@ -1,6 +1,11 @@
+//Grasshopper - Summation
+const summation = (num) => (num + 1) * num / 2;
 
 
-
+//Remove String Space
+function noSpace(x){
+  return x.replace(/\s/g,'')
+}
 
 //Find the smallest integer in the array
 class SmallestIntegerFinder {
@@ -26,6 +31,7 @@ function countSheeps(arrayOfSheep) {
 function digitize(n) {
   return n.toString().split('').reverse().map(el => parseInt(el))
 }
+
 //WeIrD StRiNg CaSe
 function toWeirdCase(string){
   let words = string.toLowerCase().split(' ');
