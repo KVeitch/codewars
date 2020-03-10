@@ -1,3 +1,11 @@
+//Does my number look big in this?
+function narcissistic(value) {
+  let sumCompare = 0;
+  let digits = (""+value).split("");
+  digits.forEach(number => sumCompare += Math.pow(parseInt(number), digits.length))
+  return sumCompare === value ? true : false;
+}
+
 //Beginner Series #3 Sum of Numbers
 function GetSum( a,b ) {
   let sum = 0;
