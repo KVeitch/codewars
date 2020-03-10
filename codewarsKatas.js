@@ -1,3 +1,23 @@
+//Persistent Bugger.
+function persistence(num) {
+  let product = 1;
+  let persistNum = 0;
+  let numArr = num.toString().split('');
+  
+  if (num < 10) {
+    return 0;
+  }
+  
+  do {
+    product = 1;
+    numArr.forEach(digit => { product = product * digit })
+    persistNum++
+    numArr = product.toString().split('')
+  } while (product > 9);
+  
+  return persistNum
+}
+
 //Remove First and Last Character
 function removeChar(str){
  return str.slice(1,-1)
