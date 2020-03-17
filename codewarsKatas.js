@@ -1,3 +1,15 @@
+//What's up next
+function nextItem(xs, item) {
+  const iterator = xs[Symbol.iterator]();
+  var value = undefined;
+  var done = false;
+  while (!done && value !== item)
+    ({value, done} = iterator.next());
+    console.log (xs,item,value, done);
+  return iterator.next().value; 
+}
+
+
 //Get the Middle Character
 function getMiddle(s) {
   return s.length % 2 === 0 ? (s[s.length/2-1] + s[s.length/2] ): s[Math.floor(s.length/2)]
