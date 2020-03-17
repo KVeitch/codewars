@@ -1,3 +1,14 @@
+//Vowel Count
+function getCount(str) {
+  var vowelsCount = 0;
+  let vowles = ['a', 'e', 'i', 'o', 'u']
+  for(let letter of str){
+    if(vowles.includes(letter)) vowelsCount++;
+  }
+  return vowelsCount;
+}
+
+
 //What's up next
 // function nextItem(xs, item) {
 //   const iterator = xs[Symbol.iterator]();
@@ -16,8 +27,6 @@ function nextItem(xs, item) {
     if (x == item) found = true;
   }
 } 
-
-
 
 //Get the Middle Character
 function getMiddle(s) {
