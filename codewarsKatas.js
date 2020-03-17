@@ -1,3 +1,9 @@
+//Calculate Average
+function find_average(array) {
+  return array.reduce((a,b) => a + b, 0) / array.length;
+}
+
+
 //A Needle in the Haystack
 function findNeedle(haystack) {
   return `found the needle at position ${haystack.findIndex(str => str === 'needle')}`
