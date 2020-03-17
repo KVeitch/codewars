@@ -1,3 +1,13 @@
+//80's Kids #1: How Many Licks Does it Take?
+const totalLicks = (env) => {
+  let lick = 252; 
+  let challenge = 0;
+
+  Object.values(env).forEach(effect => lick+= effect)
+  if(Object.values(env).sort((a,b)=>b-a)[0] > 0) challenge = Object.keys(env).find(key => env[key] === Object.values(env).sort((a,b)=>b-a)[0])
+  return `It took ${lick} licks to get to the tootsie roll center of a tootsie pop.`+(challenge? ` The toughest challenge was ${challenge}.`:'')
+}
+
 //Vowel Count
 function getCount(str) {
   var vowelsCount = 0;
@@ -7,7 +17,6 @@ function getCount(str) {
   }
   return vowelsCount;
 }
-
 
 //What's up next
 // function nextItem(xs, item) {
