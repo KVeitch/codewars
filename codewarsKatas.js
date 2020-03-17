@@ -1,3 +1,11 @@
+
+
+
+//DNA to RNA Conversion
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U')
+}
+
 //Rock Papaer Scissors!
 const rps = (p1, p2) => {
   if(p1 === p2){
