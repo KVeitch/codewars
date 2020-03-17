@@ -1,13 +1,22 @@
 //What's up next
+// function nextItem(xs, item) {
+//   const iterator = xs[Symbol.iterator]();
+//   var value = undefined;
+//   var done = false;
+//   while (!done && value !== item)
+//     ({value, done} = iterator.next());
+//     console.log (xs,item,value, done);
+//   return iterator.next().value; 
+// }
+//refactor
 function nextItem(xs, item) {
-  const iterator = xs[Symbol.iterator]();
-  var value = undefined;
-  var done = false;
-  while (!done && value !== item)
-    ({value, done} = iterator.next());
-    console.log (xs,item,value, done);
-  return iterator.next().value; 
-}
+  var found = false;
+  for (let x of xs) {
+    if (found) return x;
+    if (x == item) found = true;
+  }
+} 
+
 
 
 //Get the Middle Character
