@@ -1,4 +1,9 @@
+//Color Choice
 
+//Highest and Lowest
+function highAndLow(numbers){
+  return Math.max(...numbers.split(' ')) + ' ' + Math.min(...numbers.split(' '));
+}
 
 //80's Kids #1: How Many Licks Does it Take?
 const totalLicks = (env) => {
