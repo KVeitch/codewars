@@ -1,17 +1,19 @@
 // Perimeter of squares in a rectangle
 function perimeter(n) {
   let squareSides = [1];
-  for (let i = 1; i<= n; i++ ) {
-    squareSides.push(fib(i))
+  for (let i = 1; i <= n; i++) {
+    squareSides.push(fib(i));
   }
-  
-  return squareSides.reduce((a,b)=>a+b) * 4;
+
+  return squareSides.reduce((a, b) => a + b) * 4;
 }
 
-function fib(num){
-  var a = 1, b = 0, temp;
+function fib(num) {
+  var a = 1,
+    b = 0,
+    temp;
 
-  while (num >= 0){
+  while (num >= 0) {
     temp = a;
     a = a + b;
     b = temp;
@@ -20,6 +22,29 @@ function fib(num){
 
   return b;
 }
+
+//refactor
+function perimeter(n) {
+  let squareSides = [1];
+  for (let i = 1; i <= n; i++) {
+    squareSides.push(fib(i));
+  }
+
+  return squareSides.reduce((a, b) => a + b) * 4;
+}
+
+function fib(num) {
+  let a = 1,
+    b = 0;
+  while (num >= 0) {
+    a = a + b;
+    b = a - b;
+    num--;
+  }
+
+  return b;
+}
+
 
 //Number of People in the Bus
 // var number = function(busStops){
