@@ -1,7 +1,11 @@
 //Credit Card Mask
+// function maskify(cc) {
+//   return cc.split('').map((el,ind) => ind > cc.length-5 ? el=el : el='#').join('')
+// }  
+//refactor
 function maskify(cc) {
-  return cc.split('').map((el,ind) => ind > cc.length-5 ? el=el : el='#').join('')
-}  
+  return cc.slice(0, -4).replace(/[0-9,a-z,A-Z]/g,'#') + cc.slice(-4)
+} 
 
 //List Filtering
 function filter_list(l) {
