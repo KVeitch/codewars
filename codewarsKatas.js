@@ -1,5 +1,10 @@
 
 
+//Decending Order
+function descendingOrder(n){
+  return Number(n.toString(10).split("").sort((a,b) => b-a).join(''));
+}
+
 //Shortest Word
 function findShort(s){
   return s.split(' ').sort((a,b) => a.length - b.length)[0].length
