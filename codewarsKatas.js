@@ -1,4 +1,12 @@
+//JAden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').reduce((acc, string) => acc = acc + ' ' + string.charAt(0).toUpperCase() + string.slice(1),'').slice(1)
+ };
 
+//Disemvowel Trolls
+function disemvowel(str) {
+  return str.replace( /[aeiou]/gi, '');
+}
 
 //Decending Order
 function descendingOrder(n){
