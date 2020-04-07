@@ -1,3 +1,8 @@
+//Categorize New Member
+function openOrSenior(data){
+  return data.map(arr => arr[0] >=55 && arr[1] > 7 ? 'Senior' : 'Open')
+ }
+
 //Credit Card Mask
 // function maskify(cc) {
 //   return cc.split('').map((el,ind) => ind > cc.length-5 ? el=el : el='#').join('')
