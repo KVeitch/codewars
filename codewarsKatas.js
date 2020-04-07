@@ -1,3 +1,8 @@
+//List Filtering
+function filter_list(l) {
+  return l.filter(ele => Number.isInteger(ele))
+}
+
 //Isograms
 // function isIsogram(str){
 //   let arry = str.toLowerCase().split('').sort();
@@ -7,7 +12,13 @@
 //   return check;
 // }
 //refactor
-
+function isIsogram(str){
+  let strLength = str.length
+  let letters = str.toLowerCase().split('') 
+ 
+  letters = letters.filter((letter, index, it) => it.indexOf(letter) === index)
+  return letters.length == str.length;
+}
 
 
 
