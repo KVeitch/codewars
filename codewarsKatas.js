@@ -1,3 +1,9 @@
+//Number of People in the Bus
+// var number = function(busStops){
+//   return busStops.reduce((acc, [on, off]) => acc + on - off,0)
+// }
+//refactor
+let number = (busStops) => busStops.reduce((acc, [on, off]) => acc + on - off,0)
 //Categorize New Member
 function openOrSenior(data){
   return data.map(arr => arr[0] >=55 && arr[1] > 7 ? 'Senior' : 'Open')
