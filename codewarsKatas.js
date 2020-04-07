@@ -1,4 +1,7 @@
-
+//Credit Card Mask
+function maskify(cc) {
+  return cc.split('').map((el,ind) => ind > cc.length-5 ? el=el : el='#').join('')
+}  
 
 //List Filtering
 function filter_list(l) {
