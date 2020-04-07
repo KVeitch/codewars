@@ -1,9 +1,33 @@
+// Perimeter of squares in a rectangle
+function perimeter(n) {
+  let squareSides = [1];
+  for (let i = 1; i<= n; i++ ) {
+    squareSides.push(fib(i))
+  }
+  
+  return squareSides.reduce((a,b)=>a+b) * 4;
+}
+
+function fib(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+
 //Number of People in the Bus
 // var number = function(busStops){
 //   return busStops.reduce((acc, [on, off]) => acc + on - off,0)
 // }
 //refactor
 let number = (busStops) => busStops.reduce((acc, [on, off]) => acc + on - off,0)
+
 //Categorize New Member
 function openOrSenior(data){
   return data.map(arr => arr[0] >=55 && arr[1] > 7 ? 'Senior' : 'Open')
