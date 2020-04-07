@@ -1,4 +1,13 @@
-//JAden Casing Strings
+//Isograms
+function isIsogram(str){
+  let arry = str.toLowerCase().split('').sort();
+  let check= true;
+  
+  arry.forEach((letter,index) => letter === arry[index+1] && (check = false));
+  return check;
+}
+
+//Jaden Casing Strings
 String.prototype.toJadenCase = function () {
   return this.split(' ').reduce((acc, string) => acc = acc + ' ' + string.charAt(0).toUpperCase() + string.slice(1),'').slice(1)
  };
