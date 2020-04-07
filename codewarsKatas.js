@@ -1,11 +1,15 @@
 //Isograms
-function isIsogram(str){
-  let arry = str.toLowerCase().split('').sort();
-  let check= true;
+// function isIsogram(str){
+//   let arry = str.toLowerCase().split('').sort();
+//   let check= true;
   
-  arry.forEach((letter,index) => letter === arry[index+1] && (check = false));
-  return check;
-}
+//   arry.forEach((letter,index) => letter === arry[index+1] && (check = false));
+//   return check;
+// }
+//refactor
+
+
+
 
 //Jaden Casing Strings
 String.prototype.toJadenCase = function () {
