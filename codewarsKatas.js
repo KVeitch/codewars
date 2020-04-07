@@ -1,3 +1,5 @@
+
+
 //List Filtering
 function filter_list(l) {
   return l.filter(ele => Number.isInteger(ele))
@@ -19,8 +21,6 @@ function isIsogram(str){
   letters = letters.filter((letter, index, it) => it.indexOf(letter) === index)
   return letters.length == str.length;
 }
-
-
 
 //Jaden Casing Strings
 String.prototype.toJadenCase = function () {
