@@ -1,15 +1,21 @@
 //Responsible Drinking
-function hydrate(s) {
-  let total = s.split(' ').reduce((acc, el) => {
-    if (typeof parseInt(el) >=0) {
-      acc += el;
-    }
-    return acc;
-  }, 0);
+// function hydrate(s) {
+//   let total = s.split(' ').reduce((acc, el) => {
+//     if (typeof parseInt(el) >=0) {
+//       acc += el;
+//     }
+//     return acc;
+//   }, 0);
 
+//   return total === 1 ? `${total} glass of water` : `${total} glasses of water`;
+// }
+//refactor
+function hydrate(s) {
+  let total = s
+    .split(' ')
+    .reduce((acc, el) => (parseInt(el) >= 0 ? (acc += parseInt(el)) : acc), 0);
   return total === 1 ? `${total} glass of water` : `${total} glasses of water`;
 }
-
 // Perimeter of squares in a rectangle
 function perimeter(n) {
   let squareSides = [1];
