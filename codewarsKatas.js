@@ -1,3 +1,25 @@
+//Asterisk it
+// function asteriscIt(n) {
+//   let digits;
+
+//   if (typeof n ==='object'){
+//   digits = n.join('').split('')
+//   } else{
+//   digits = n.toString().split('')
+//   }
+  
+//   for (let i = 1; i< digits.length; i++){
+//     if(parseInt(digits[i])%2 ===0 && parseInt(digits[i-1])%2 ===0){
+//     digits[i-1] = digits[i-1]+'*'
+//     }
+//   }
+//   return digits.join('')
+// };
+//refactor
+function asteriscIt(n) { 
+  return (n + '').replace(/,/g,'').replace(/([02468])(?=[02468])/g, '$1*');
+ };
+
 //You only need one
 function check(a, x) {
   return a.includes(x)
