@@ -16,9 +16,12 @@
 //   return digits.join('')
 // };
 //refactor
-function asteriscIt(n) { 
-  return (n + '').replace(/,/g,'').replace(/([02468])(?=[02468])/g, '$1*');
- };
+// function asteriscIt(n) { 
+//   return (n + '').replace(/,/g,'').replace(/([02468])(?=[02468])/g, '$1*');
+//  };
+//2nd Refactor
+const asteriscIt = (n) =>(n + '').replace(/,/g,'').replace(/([02468])(?=[02468])/g, '$1*');
+
 
 //You only need one
 function check(a, x) {
