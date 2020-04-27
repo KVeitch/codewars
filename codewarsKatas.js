@@ -1,3 +1,6 @@
+//Find Min and Max
+const getMinMax = (arr) => [Math.min(...arr), Math.max(...arr)];
+
 //Asterisk it
 // function asteriscIt(n) {
 //   let digits;
