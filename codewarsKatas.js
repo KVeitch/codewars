@@ -1,3 +1,28 @@
+//Get Planet Name By ID
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      return 'Mercury'
+    case 2:
+      return 'Venus'
+    case 3:
+      return 'Earth'
+    case 4:
+      return 'Mars'
+    case 5:
+      return 'Jupiter'
+    case 6:
+      return 'Saturn'
+    case 7:
+      return 'Uranus'
+    case 8:
+      return 'Neptune'
+  }
+  
+  return name;
+}
+
 //Find Min and Max
 const getMinMax = (arr) => [Math.min(...arr), Math.max(...arr)];
 
