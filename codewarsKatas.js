@@ -1,3 +1,16 @@
+//Total amount of points
+function points(games) {
+  return games.reduce((acc, game) => {
+    if (game[0] - game[2] > 0) {
+      acc += 3;
+    } else if (game[0] - game[2] === 0) {
+      acc += 1;
+    }
+    return acc;
+  }, 0);
+}
+
+
 //Get Planet Name By ID
 function getPlanetName(id){
   var name;
