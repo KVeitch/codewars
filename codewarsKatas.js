@@ -1,3 +1,8 @@
+//Happy Birthday, Darling!
+let womensAge = (age) =>
+  `${age}? That's just ${20 + (age % 2)}, in base ${Math.floor(age / 2)}!`;
+
+
 //Total amount of points
 // function points(games) {
 //   return games.reduce((acc, game) => {
