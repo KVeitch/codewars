@@ -1,15 +1,20 @@
 //Total amount of points
+// function points(games) {
+//   return games.reduce((acc, game) => {
+//     if (game[0] - game[2] > 0) {
+//       acc += 3;
+//     } else if (game[0] - game[2] === 0) {
+//       acc += 1;
+//     }
+//     return acc;
+//   }, 0);
+// }
+//Refactor
 function points(games) {
   return games.reduce((acc, game) => {
-    if (game[0] - game[2] > 0) {
-      acc += 3;
-    } else if (game[0] - game[2] === 0) {
-      acc += 1;
-    }
-    return acc;
+    return (acc += game[0] > game[2] ? 3 : game[0] === game[2] ? 1 : 0);
   }, 0);
 }
-
 
 //Get Planet Name By ID
 function getPlanetName(id){
