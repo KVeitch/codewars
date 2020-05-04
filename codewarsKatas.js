@@ -395,16 +395,28 @@ function narcissistic(value) {
 }
 
 //Beginner Series #3 Sum of Numbers
-function GetSum( a,b ) {
-  let sum = 0;
-  let c;
-  a > b ? ( c = a, a = b, b = c) : (a = a , b = b)
-  for( let i = a ; i <= b ; ++i) {
-  sum += i
-  }
+// function GetSum( a,b ) {
+//   let sum = 0;
+//   let c;
+//   a > b ? ( c = a, a = b, b = c) : (a = a , b = b)
+//   for( let i = a ; i <= b ; ++i) {
+//   sum += i
+//   }
   
+//   return sum;
+// }
+//refactor
+function GetSum(a, b) {
+  if (a > b) {
+    return GetSum(b, a);
+  }
+  let sum = 0;
+  for (i = a; i <= b; i++) {
+    sum += i;
+  }
   return sum;
-}
+}  
+  
 
 //Sum of two lowest positive integers
 function sumTwoSmallestNumbers(numbers) {  
