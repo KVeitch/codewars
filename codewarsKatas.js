@@ -1,3 +1,22 @@
+//Naughty or Nice?
+function getNiceNames(people){
+  return people.reduce((acc,person) => {
+    if (person.wasNice){
+      acc.push(person.name)
+    }
+    return acc
+    },[])
+}
+
+function getNaughtyNames(people){
+    return people.reduce((acc,person) => {
+    if (!person.wasNice){
+      acc.push(person.name)
+    }
+    return acc
+    },[])
+}
+
 //Happy Birthday, Darling!
 let womensAge = (age) =>
   `${age}? That's just ${20 + (age % 2)}, in base ${Math.floor(age / 2)}!`;
