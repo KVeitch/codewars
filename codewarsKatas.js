@@ -1,27 +1,39 @@
 //London CityHacker
+// function londonCityHacker(j) {
+//   if (j.length === 0) return '£0.00';
+
+//   let tube =
+//     Math.round(j.filter((leg) => typeof leg === 'string').length * 24) / 10;
+//   let bus =
+//     Math.round(
+//       j.filter((leg, i) => {
+//         return (
+//           (typeof leg === 'number' && typeof j[i + 1] !== 'number') ||
+//           (typeof leg === 'number' && typeof j[i - 1] !== 'number')
+//         );
+//       }).length * 15
+//     ) / 10;
+
+//   return '£' + (tube + bus).toFixed(2);
+// }
+//refactor
 function londonCityHacker(journey) {
-  if (journey.length === 0) {
-    return '£0.00';
-  }
-
-  let fare = 0;
-  let tube =
-    Math.round(journey.filter((leg) => typeof leg === 'string').length * 24) /
-    10;
-
-  let bus = journey.reduce((acc, leg, i) => {
-    if (typeof leg === 'number' && typeof journey[i - 1] !== 'number') {
-      console.log(leg, acc);
-      acc += 1.5;
+  let tubeFare =
+    Math.round(journey.filter((leg) => typeof leg === 'string').length * 24) / 10;
+  let busFare =
+    Math.round(journey.filter((leg) => typeof leg === 'number').length * 15) / 10;
+  let totalFare = tubeFare + busFare;
+  for (let i = 0; i < journey.length; i++) {
+    if (typeof journey[i] === 'number' && typeof journey[i + 1] === 'number') {
+      totalFare -= 1.5;
+      i++;
     }
-
-    return acc;
-  }, 0);
-
-  fare = (tube + bus).toFixed(2);
-
-  return '£' + fare;
+  }
+  return "£"+totalFare.toFixed(2);
 }
+
+
+
 
 //Greet Me
 const greet = (name) =>
