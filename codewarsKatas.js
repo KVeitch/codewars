@@ -17,19 +17,30 @@
 //   return '£' + (tube + bus).toFixed(2);
 // }
 //refactor
+// function londonCityHacker(journey) {
+//   let tubeFare =
+//     Math.round(journey.filter((leg) => typeof leg === 'string').length * 24) / 10;
+//   let busFare =
+//     Math.round(journey.filter((leg) => typeof leg === 'number').length * 15) / 10;
+//   let totalFare = tubeFare + busFare;
+//   for (let i = 0; i < journey.length; i++) {
+//     if (typeof journey[i] === 'number' && typeof journey[i + 1] === 'number') {
+//       totalFare -= 1.5;
+//       i++;
+//     }
+//   }
+//   return "£"+totalFare.toFixed(2);
+// }
+
+//refactor
 function londonCityHacker(journey) {
-  let tubeFare =
-    Math.round(journey.filter((leg) => typeof leg === 'string').length * 24) / 10;
-  let busFare =
-    Math.round(journey.filter((leg) => typeof leg === 'number').length * 15) / 10;
-  let totalFare = tubeFare + busFare;
-  for (let i = 0; i < journey.length; i++) {
-    if (typeof journey[i] === 'number' && typeof journey[i + 1] === 'number') {
-      totalFare -= 1.5;
-      i++;
-    }
-  }
-  return "£"+totalFare.toFixed(2);
+  let fare = 0;
+  fare = journey
+    .map((leg, i) => (isNaN(leg) ? ((fare = 0), 2.4) : (fare = 1.5 - fare)))
+    .reduce((acc, leg) => acc + leg, 0)
+    .toFixed(2);
+
+  return '£' + fare;
 }
 
 
