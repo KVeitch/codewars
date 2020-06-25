@@ -34,17 +34,14 @@
 
 //refactor
 function londonCityHacker(journey) {
-  let fare = 0;
-  fare = journey
-    .map((leg, i) => (isNaN(leg) ? ((fare = 0), 2.4) : (fare = 1.5 - fare)))
+  let fareStart = 0;
+  let fare = journey
+    .map(leg => (isNaN(leg) ? ((fareStart = 0), 2.4) : (fareStart = 1.5 - fareStart)))
     .reduce((acc, leg) => acc + leg, 0)
     .toFixed(2);
 
   return '£' + fare;
 }
-
-
-
 
 //Greet Me
 const greet = (name) =>
