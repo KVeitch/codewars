@@ -1,6 +1,26 @@
 //London CityHacker
 function londonCityHacker(journey) {
-  //code me up baby!
+  if (journey.length === 0) {
+    return '£0.00';
+  }
+
+  let fare = 0;
+  let tube =
+    Math.round(journey.filter((leg) => typeof leg === 'string').length * 24) /
+    10;
+
+  let bus = journey.reduce((acc, leg, i) => {
+    if (typeof leg === 'number' && typeof journey[i - 1] !== 'number') {
+      console.log(leg, acc);
+      acc += 1.5;
+    }
+
+    return acc;
+  }, 0);
+
+  fare = (tube + bus).toFixed(2);
+
+  return '£' + fare;
 }
 
 //Greet Me
