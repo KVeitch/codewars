@@ -1,3 +1,6 @@
+//Reverse the bits in an integer
+
+
 //London CityHacker
 // function londonCityHacker(j) {
 //   if (j.length === 0) return '£0.00';
