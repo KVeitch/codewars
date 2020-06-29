@@ -1,4 +1,22 @@
 //Indexed capitalization
+// function capitalize(s,arr){
+//   let result = s.split("")
+  
+//   arr.forEach( n => {
+//     if(result[n]) result[n] = result[n].toUpperCase()
+//   })
+  
+//   return result.join("");
+// };
+
+//refactor
+const capitalize = (s, arr) =>
+  s
+    .split('')
+    .map((letter, index) =>
+      arr.includes(index) ? letter.toUpperCase() : letter
+    )
+    .join('');
 
 //Reverse the bits in an integer
 function reverseBits (n) {
