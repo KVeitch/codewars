@@ -1,5 +1,20 @@
 //Largest pair sum in array
+function largestPairSum(numbers) {
+  let a = numbers[0];
+  let b = numbers[1];
 
+  for (let i = 2; i < numbers.length; ++i) {
+    if (b > a) {
+      a = a + b;
+      b = a - b;
+      a = a - b;
+    }
+    if (numbers[i] > b) {
+      b = numbers[i];
+    }
+  }
+  return a + b;
+}
 //Indexed capitalization
 // function capitalize(s,arr){
 //   let result = s.split("")
