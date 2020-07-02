@@ -1,3 +1,5 @@
+//Counting Duplicates
+
 //Count the Digit
 // function nbDig(n, d) {
 //   let count = 0;
