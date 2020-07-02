@@ -1,5 +1,19 @@
 //Count the Digit
-
+function nbDig(n, d) {
+  let count = 0;
+  for (let i = 0; i <= n; i++) {
+    count += (i * i)
+      .toString()
+      .split('')
+      .reduce((acc, num) => {
+        if (num == d) {
+          acc++;
+        }
+        return acc;
+      }, 0);
+  }
+  return count;
+}
 
 
 //Largest pair sum in array
