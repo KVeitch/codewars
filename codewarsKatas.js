@@ -1,4 +1,27 @@
-//Counting Duplicates
+//Count the number of Duplicates
+// function duplicateCount(text) {
+//   let counts = {};
+//   let result = 0;
+//   text
+//     .toLowerCase()
+//     .split('')
+//     .forEach((x) => {
+//       counts[x] = (counts[x] || 0) + 1;
+//     });
+//   console.log(counts);
+//   Object.values(counts).forEach((n) => {
+//     n > 1 && result++;
+//   });
+
+//   return result;
+// }
+//refactor
+function duplicateCount(text){
+  let regex = /([^])\1+/;
+  return (text.toLowerCase().split('').sort().join('').match(regex) || []).length;
+}
+
+
 
 //Count the Digit
 // function nbDig(n, d) {
