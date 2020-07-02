@@ -16,9 +16,12 @@
 //   return result;
 // }
 //refactor
-function duplicateCount(text){
-  let regex = /([^])\1+/;
-  return (text.toLowerCase().split('').sort().join('').match(regex) || []).length;
+function duplicateCount(text) {
+  let regex = /([^])\1+/g;
+  let duplicates = (
+    text.toLowerCase().split('').sort().join('').match(regex) || []
+  ).length;
+  return duplicates;
 }
 
 
