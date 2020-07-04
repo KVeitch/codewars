@@ -1,4 +1,27 @@
 //Date formatter
+function getDate(uts, loc) {
+  let date = new Date(uts * 1000);
+  let result = formats[loc];
+  let year = result.includes('yyyy')
+    ? date.getFullYear()
+    : date.getFullYear().toString().substr(-2);
+
+  let month = result.includes('mm')
+    ? (date.getMonth() + 1).toString().padStart(2, '0')
+    : date.getMonth() + 1;
+
+  let day = result.includes('dd')
+    ? date.getDate().toString().padStart(2, '0')
+    : date.getDate().toString();
+
+  result = result
+    .replace(/d+/g, () => day)
+    .replace(/m+/g, () => month)
+    .replace(/y+/g, () => year);
+
+  return result;
+}
+
 
 //Count the number of Duplicates
 // function duplicateCount(text) {
