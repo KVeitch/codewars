@@ -1,3 +1,5 @@
+//Date formatter
+
 //Count the number of Duplicates
 // function duplicateCount(text) {
 //   let counts = {};
@@ -23,8 +25,6 @@ function duplicateCount(text) {
   ).length;
   return duplicates;
 }
-
-
 
 //Count the Digit
 // function nbDig(n, d) {
