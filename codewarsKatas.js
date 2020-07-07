@@ -1,5 +1,22 @@
 //Positive to negative binary numbers
+function positiveToNegative(b) {
+  if (!b.includes(1)) {
+    return b.length < 5 ? [0, 0, 0, 0] : b;
+  }
 
+  let results = (parseInt(b.map((n) => (n ? 0 : 1)).join(''), 2) + 1)
+    .toString(2)
+    .split('')
+    .map((n) => parseInt(n));
+  if (results.length < 4) {
+    let beforeLength = results.length;
+    for (let i = 1; i <= 4 - beforeLength; i++) {
+      results.unshift(0);
+    }
+  }
+
+  return results;
+}
 //Date formatter
 function getDate(uts, loc) {
   let date = new Date(uts * 1000);
