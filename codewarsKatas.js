@@ -1,16 +1,23 @@
 //Plus - minus - plus - plus - ... - Count
+// const catchSignChange = (arr) => {
+//   let count = arr.map((n) => Math.sign(n) || 1);
+//   return count.reduce((acc, n, i) => {
+//     if (n !== count[i + 1] && count[i + 1]) {
+//       acc++;
+//     }
+//     return acc;
+//   }, 0);
+// };
+
+//refactor
 const catchSignChange = (arr) => {
+  console.log(arr);
   let count = arr.map((n) => Math.sign(n) || 1);
-  return count.reduce((acc, n, i) => {
-    if (n !== count[i + 1] && count[i + 1]) {
-      acc++;
-    }
-    return acc;
-  }, 0);
+  return count.reduce(
+    (acc, n, i) => (n !== count[i + 1] && count[i + 1] ? acc + 1 : acc),
+    0
+  );
 };
-
-
-
 
 //Positive to negative binary numbers
 // function positiveToNegative(b) {
