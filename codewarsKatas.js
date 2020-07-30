@@ -1,3 +1,5 @@
+//Find the odd int
+
 //Simple array product
 const solve = (arr) => {
   let products = arr.slice(1).reduce((acc, el) => helper(acc, el), arr[0]);
