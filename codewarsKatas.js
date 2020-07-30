@@ -1,4 +1,17 @@
 //Find the odd int
+function findOdd(A) {
+  let result;
+  let data = {};
+  A.forEach((int) => {
+    data[int] ? (data[int] += 1) : (data[int] = 1);
+  });
+
+  for (let key in data) {
+    if (data[key] % 2 != 0) result = parseInt(key);
+  }
+
+  return result;
+}
 
 //Simple array product
 const solve = (arr) => {
