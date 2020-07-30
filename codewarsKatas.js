@@ -1,4 +1,11 @@
 //Simple array product
+const solve = (arr) => {
+  let products = arr.slice(1).reduce((acc, el) => helper(acc, el), arr[0]);
+  return Math.max(...products);
+};
+
+const helper = (arr1, arr2) =>
+  arr1.reduce((acc, el) => acc.concat(arr2.map((e) => e * el)), []);
 
 //Mumbling
 function accum(s) {
