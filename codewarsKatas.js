@@ -1,3 +1,5 @@
+//Simple array product
+
 //Mumbling
 function accum(s) {
   return s
@@ -5,7 +7,6 @@ function accum(s) {
     .map((l, i) => l.toUpperCase() + l.toLowerCase().repeat(i))
     .join('-');
 }
-
 
 //Plus - minus - plus - plus - ... - Count
 // const catchSignChange = (arr) => {
