@@ -1,3 +1,9 @@
+//Mumbling
+function accum(s) {
+	// your code
+}
+
+
 //Plus - minus - plus - plus - ... - Count
 // const catchSignChange = (arr) => {
 //   let count = arr.map((n) => Math.sign(n) || 1);
