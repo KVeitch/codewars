@@ -1,6 +1,9 @@
 //Mumbling
 function accum(s) {
-	// your code
+  return s
+    .split('')
+    .map((l, i) => l.toUpperCase() + l.toLowerCase().repeat(i))
+    .join('-');
 }
 
 
