@@ -1,3 +1,6 @@
+//Multiplication table
+
+
 //Find the odd int
 function findOdd(A) {
   let data = {};
