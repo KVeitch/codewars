@@ -1,14 +1,20 @@
 //Multiplication table
+// function multiplicationTable(n) {
+//   results = [];
+//   for (var i = 1; i <= n; i++) {
+//     row = [];
+//     for (var j = 1; j <= n; j++) {
+//       row.push(i * j);
+//     }
+//     results.push(row);
+//   }
+//   return results;
+// }
+//Refactor
 function multiplicationTable(n) {
-  results = [];
-  for (var i = 1; i <= n; i++) {
-    row = [];
-    for (var j = 1; j <= n; j++) {
-      row.push(i * j);
-    }
-    results.push(row);
-  }
-  return results;
+  return [...Array(n)].map((num1, i) =>
+    [...Array(n)].map((num2, j) => (i + 1) * (j + 1))
+  );
 }
 
 //Find the odd int
