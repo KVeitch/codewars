@@ -1,5 +1,15 @@
 //Multiplication table
-
+function multiplicationTable(n) {
+  results = [];
+  for (var i = 1; i <= n; i++) {
+    row = [];
+    for (var j = 1; j <= n; j++) {
+      row.push(i * j);
+    }
+    results.push(row);
+  }
+  return results;
+}
 
 //Find the odd int
 function findOdd(A) {
