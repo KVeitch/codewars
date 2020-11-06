@@ -1,5 +1,19 @@
 //Casino chips
+function solve(arr) {
+  let [a, b, c] = arr.sort((e, f) => f - e);
+  let tracker = 0;
+  let count = 0;
+  while (b > 0) {
+    console.log(b);
+    tracker = Math.ceil(b / 2);
+    count += tracker;
+    a -= tracker;
+    b -= tracker;
+    [a, b, c] = [a, b, c].sort((e, f) => f - e);
+  }
 
+  return count;
+}
 // L2: Triple X
 function tripleX(str){
   return str.match('x') ? str.indexOf('x') === str.indexOf('xxx') : false;
