@@ -1,3 +1,5 @@
+//Casino chips
+
 // L2: Triple X
 function tripleX(str){
   return str.match('x') ? str.indexOf('x') === str.indexOf('xxx') : false;
