@@ -1,3 +1,8 @@
+// L2: Triple X
+
+
+
+
 //Multiplication table
 // function multiplicationTable(n) {
 //   results = [];
