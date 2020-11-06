@@ -1,26 +1,41 @@
 //Casino chips
+// function solve(arr) {
+//   let [a, b, c] = arr.sort((e, f) => f - e);
+//   let tracker = 0;
+//   let count = 0;
+//   while (b > 0) {
+//     console.log(b);
+//     tracker = Math.ceil(b / 2);
+//     count += tracker;
+//     a -= tracker;
+//     b -= tracker;
+//     [a, b, c] = [a, b, c].sort((e, f) => f - e);
+//   }
+
+//   return count;
+// }
+
+//Refactor
 function solve(arr) {
-  let [a, b, c] = arr.sort((e, f) => f - e);
-  let tracker = 0;
-  let count = 0;
-  while (b > 0) {
-    console.log(b);
-    tracker = Math.ceil(b / 2);
-    count += tracker;
-    a -= tracker;
-    b -= tracker;
-    [a, b, c] = [a, b, c].sort((e, f) => f - e);
+  let [stack1, stack2, stack3] = arr.sort((a, b) => b - a);
+  let stackTracker = 0;
+  let daysAtCasino = 0;
+  
+  while (stack2 > 0) {
+    stackTracker = Math.ceil(stack2 / 2);
+    stack1 -= stackTracker;
+    stack2 -= stackTracker;
+    daysAtCasino += stackTracker;
+    [stack1, stack2, stack3] = [stack1, stack2, stack3].sort((a, b) => b - a);
   }
 
-  return count;
+  return daysAtCasino;
 }
+
 // L2: Triple X
 function tripleX(str){
   return str.match('x') ? str.indexOf('x') === str.indexOf('xxx') : false;
 }
-
-
-
 
 //Multiplication table
 // function multiplicationTable(n) {
