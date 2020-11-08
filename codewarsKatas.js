@@ -1,5 +1,7 @@
 //evensAndOdds
-
+function evensAndOdds(num){
+	return num %2 ? Number(num).toString(16) : Number(num).toString(2);
+}
 // String ends with?
 function solution(str, ending){
   return str.substring(str.length - ending.length, str.length) === ending;
