@@ -1,5 +1,7 @@
 //Get the mean of an array
-
+function getAverage(marks){
+  return Math.floor(marks.reduce((a,b) => a+b )/marks.length);
+}
 // Maximum Product
 function adjacentElementsProduct(array) {
   const products = array.map((num, i) => num * array[i + 1]);
