@@ -1,3 +1,5 @@
+// Maximum Product
+
 //evensAndOdds
 function evensAndOdds(num){
 	return num %2 ? Number(num).toString(16) : Number(num).toString(2);
