@@ -1,5 +1,9 @@
 // Maximum Product
-
+function adjacentElementsProduct(array) {
+  const products = array.map((num, i) => num * array[i + 1]);
+  products.pop();
+  return Math.max(...products);
+}
 //evensAndOdds
 function evensAndOdds(num){
 	return num %2 ? Number(num).toString(16) : Number(num).toString(2);
