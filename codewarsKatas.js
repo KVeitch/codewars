@@ -1,10 +1,14 @@
 //Find the unique number
+// function findUniq(arr) {
+//   return (
+//     arr.find(function (value) {
+//       return arr.indexOf(value) === arr.lastIndexOf(value);
+//     }) || 0
+//   );
+// }
+//Refactor
 function findUniq(arr) {
-  return (
-    arr.find(function (value) {
-      return arr.indexOf(value) === arr.lastIndexOf(value);
-    }) || 0
-  );
+  return arr.find((num) => arr.indexOf(num) === arr.lastIndexOf(num));
 }
 
 //Complete Fibonacci Series
