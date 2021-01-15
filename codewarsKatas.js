@@ -1,3 +1,6 @@
+//Are arrow functions odd?
+const odds=(values) => values.filter((n) => n%2 === 1);
+
 //Find the unique number
 // function findUniq(arr) {
 //   return (
