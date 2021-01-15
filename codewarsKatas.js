@@ -1,4 +1,14 @@
 //Complete Fibonacci Series
+function fibonacci(num) {
+  let results = [];
+  if (num <= 0) return results;
+  results[0] = 0;
+  results[1] = 1;
+  for (let i = 2; i <= num - 1; i++) {
+    results[i] = results[i - 2] + results[i - 1];
+  }
+  return results;
+}
 
 //Get the mean of an array
 function getAverage(marks){
