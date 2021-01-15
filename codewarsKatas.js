@@ -1,3 +1,6 @@
+//Find the unique number
+
+
 //Complete Fibonacci Series
 function fibonacci(num) {
   let results = [];
