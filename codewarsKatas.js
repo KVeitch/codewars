@@ -1,5 +1,11 @@
 //Find the unique number
-
+function findUniq(arr) {
+  return (
+    arr.find(function (value) {
+      return arr.indexOf(value) === arr.lastIndexOf(value);
+    }) || 0
+  );
+}
 
 //Complete Fibonacci Series
 function fibonacci(num) {
