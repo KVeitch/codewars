@@ -1,4 +1,6 @@
 //Snail
+//Pair of Bears
+
 //Numbers to Objects
 const numObj = (s) => s.map((a) => ({ [a]: String.fromCharCode(a) }));
 
