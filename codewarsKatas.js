@@ -1,6 +1,6 @@
 //Snail
 
-//LifePath Nymber
+//LifePath Number
 function reduceToOne(num) {
   if (num > 9) {
     let digits = num
