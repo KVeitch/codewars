@@ -1,7 +1,25 @@
 //Snail
 
 //LifePath Nymber
+function reduceToOne(num) {
+  if (num > 9) {
+    let digits = num
+      .toString()
+      .split('')
+      .map((n) => parseInt(n));
+    let sum = digits.reduce((a, b) => a + b);
+    return reduceToOne(sum);
+  }
+  return num;
+}
 
+function lifePathNumber(dateOfBirth) {
+  let nums = dateOfBirth
+    .split('-')
+    .map((s) => parseInt(s))
+    .map((n) => reduceToOne(n));
+  return reduceToOne(nums.reduce((a, b) => a + b));
+}
 
 
 //Are arrow functions odd?
