@@ -1,3 +1,9 @@
+//Snail
+
+//LifePath Nymber
+
+
+
 //Are arrow functions odd?
 const odds=(values) => values.filter((n) => n%2 === 1);
 
