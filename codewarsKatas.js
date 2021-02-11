@@ -1,5 +1,9 @@
 //Snail
 //Pair of Bears
+function bears(x, s) {
+  const pairs = s.match(/(8B)|(B8)/g) || [];
+  return [pairs.join(''), pairs.length >= x];
+}
 
 //Numbers to Objects
 const numObj = (s) => s.map((a) => ({ [a]: String.fromCharCode(a) }));
