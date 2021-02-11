@@ -1,4 +1,7 @@
 //Snail
+//Numbers to Objects
+
+
 
 //LifePath Number
 function reduceToOne(num) {
