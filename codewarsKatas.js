@@ -1,7 +1,6 @@
 //Snail
 //Numbers to Objects
-
-
+const numObj = (s) => s.map((a) => ({ [a]: String.fromCharCode(a) }));
 
 //LifePath Number
 function reduceToOne(num) {
