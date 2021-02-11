@@ -1,4 +1,6 @@
 //Snail
+//Move 10
+
 //Pair of Bears
 function bears(x, s) {
   const pairs = s.match(/(8B)|(B8)/g) || [];
