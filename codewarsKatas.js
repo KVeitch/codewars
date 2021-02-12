@@ -1,4 +1,6 @@
 //Snail
+//Two to One
+
 //Rearange Number to Get its Maximum
 const maxRedigit = (num) =>
   num < 1000 && num > 99
