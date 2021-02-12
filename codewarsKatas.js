@@ -4,7 +4,11 @@ function testit(a, b) {
   return a | b;
 }
 //Thinking & Testing : Incomplete string
-
+function testit(s) {
+  return s.replace(/../g, (s) =>
+    String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2)
+  );
+}
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
