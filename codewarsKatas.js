@@ -1,5 +1,15 @@
 //Snail
 //Rearange Number to Get its Maximum
+const maxRedigit = (num) =>
+  num < 1000 && num > 99
+    ? Number(
+        num
+          .toString()
+          .split('')
+          .sort((a, b) => b - a)
+          .join('')
+      )
+    : null;
 
 //Move 10
 function moveTen(s) {
