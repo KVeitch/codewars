@@ -9,7 +9,7 @@ function testit(s) {
     String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2)
   );
 }
-//Thinking & Testing : True or False
+//Thinking & Testing : Something capitalized
 
 
 //Who Likes It?
