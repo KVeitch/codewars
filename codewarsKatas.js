@@ -3,6 +3,8 @@
 function testit(a, b) {
   return a | b;
 }
+//Thinking & Testing : Incomplete string
+
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
