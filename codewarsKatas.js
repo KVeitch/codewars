@@ -9,6 +9,9 @@ function testit(s) {
     String.fromCharCode((s.charCodeAt(0) + s.charCodeAt(1)) / 2)
   );
 }
+//Thinking & Testing : True or False
+
+
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
