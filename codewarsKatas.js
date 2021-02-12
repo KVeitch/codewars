@@ -1,6 +1,8 @@
 //Snail
 //Thinking & Testing: A * B?
-
+function testit(a, b) {
+  return a | b;
+}
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
