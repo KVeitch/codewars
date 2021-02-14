@@ -25,17 +25,17 @@ function testit(s) {
 //   return s.join(' ');
 // }
 //Refactor
-function testit(s) {
-  return s
+const testit = (s) =>
+  s
     .split(' ')
     .map(
       (text) =>
-            text.slice(0, text.length - 1) +
-            text.charAt(text.length - 1).toUpperCase() +
-            text.slice(text.length)
-      )
+        text.slice(0, text.length - 1) +
+        text.charAt(text.length - 1).toUpperCase() +
+        text.slice(text.length)
+    )
     .join(' ');
-}
+    
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
