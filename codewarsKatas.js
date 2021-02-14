@@ -10,7 +10,20 @@ function testit(s) {
   );
 }
 //Thinking & Testing : Something capitalized
-
+function testit(s) {
+  s = s.split(' ').map((text) => {
+    if (text.length > 1) {
+      let sliceSpot = text.length - 1;
+      return (
+        text.slice(0, sliceSpot) +
+        text.charAt(sliceSpot).toUpperCase() +
+        text.slice(sliceSpot + 1)
+      );
+    }
+    return text.toUpperCase();
+  });
+  return s.join(' ');
+}
 
 //Who Likes It?
 // function likes(names) {
