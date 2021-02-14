@@ -35,7 +35,8 @@ const testit = (s) =>
         text.slice(text.length)
     )
     .join(' ');
-    
+//Thinking & Testing : Uniq or not Uniq
+
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
