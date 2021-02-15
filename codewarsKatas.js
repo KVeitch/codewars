@@ -41,6 +41,17 @@ const testit = (s) =>
 // }
 //Refactor
 const testit = (a, b) => [...new Set(a), ...new Set(b)].sort((a, b) => a - b);
+
+const unitMap = {
+  mm: 1,
+  cm: 2,
+  dm: 3,
+  m: 4,
+  km: 5,
+};
+
+
+
 //Who Likes It?
 // function likes(names) {
 //   names = names || [];
