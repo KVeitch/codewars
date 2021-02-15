@@ -1,5 +1,12 @@
 //Snail
 //Decrypt this school cipher
+const decrypt = (str) =>
+  str
+    .replace(/'\d+'/g, (l) => String.fromCharCode(l.replace(/'/g, '') * 1))
+    .split('')
+    .reverse()
+    .join(``);
+
 //Thinking & Testing: A * B?
 function testit(a, b) {
   return a | b;
