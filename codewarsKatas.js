@@ -1,4 +1,5 @@
 //Snail
+//Decrypt this school cipher
 //Thinking & Testing: A * B?
 function testit(a, b) {
   return a | b;
