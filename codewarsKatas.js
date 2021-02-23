@@ -1,5 +1,12 @@
 //Snail
 //Letterbox Paint-Squad
+const paintLetterboxes = (start, end) => {
+  let map = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 };
+  for (let i = start; i <= end; i++) {
+    ('' + i).split('').forEach((num) => map[num]++);
+  }
+  return Object.values(map);
+};
 //Is this a triangle?
 function isTriangle(a, b, c) {
   return a < b + c && b < a + c && c < b + a;
