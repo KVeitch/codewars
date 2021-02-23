@@ -1,5 +1,15 @@
 //Snail
 //Sums of Parts
+function partsSums(ls) {
+  let i = ls.length;
+  const sums = Array(i);
+  sums.push(0);
+  while (i > 0) {
+    i--;
+    sums[i] = sums[i + 1] + ls[i];
+  }
+  return sums;
+}
 //Letterbox Paint-Squad
 const paintLetterboxes = (start, end) => {
   let map = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0 };
