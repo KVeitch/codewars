@@ -1,4 +1,6 @@
 //Snail
+//Is this a triangle?
+
 //Decrypt this school cipher
 const decrypt = (str) =>
   str
