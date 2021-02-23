@@ -1,6 +1,8 @@
 //Snail
 //Is this a triangle?
-
+function isTriangle(a, b, c) {
+  return a < b + c && b < a + c && c < b + a;
+}
 //Decrypt this school cipher
 const decrypt = (str) =>
   str
