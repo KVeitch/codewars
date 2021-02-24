@@ -1,4 +1,5 @@
 //Snail
+//Odd or Even?
 //Sums of Parts
 function partsSums(ls) {
   let i = ls.length;
