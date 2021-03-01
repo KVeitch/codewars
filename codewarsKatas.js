@@ -1,5 +1,18 @@
 //Snail
 //Braking well
+function dist(v, mu) {
+  // suppose reaction time is 1
+  return (v / 3.6) ** 2 / (2 * mu * 9.81) + v / 3.6;
+}
+
+function speed(d, mu) {
+  // suppose reaction time is 1
+  const a = 1 / (2 * 9.81 * mu);
+  const c = -d;
+  const result = mu * 9.81 * (-1 + Math.sqrt(1 - 4 * a * c));
+  const result2 = mu * 9.81 * (-1 - Math.sqrt(1 - 4 * a * c));
+  return result2 > result ? result2 * 3.6 : result * 3.6;
+}
 
 //Guess the Sequence
 function sequence(x) {
