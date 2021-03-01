@@ -1,4 +1,6 @@
 //Snail
+// Get the integers between two numbers
+
 //Odd or Even?
 function oddOrEven(array) {
   const sum = array.reduce((a, b) => a + b, 0);
