@@ -1,4 +1,7 @@
 //Snail
+//Write Number in Expanded Form
+
+
 //Braking well
 function dist(v, mu) {
   // suppose reaction time is 1
