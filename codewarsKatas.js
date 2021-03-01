@@ -1,4 +1,6 @@
 //Snail
+//Guess the Sequence
+
 // Get the integers between two numbers
 function range(startNum, endNum) {
   const results = [];
