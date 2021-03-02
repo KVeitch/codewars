@@ -1,4 +1,6 @@
 //Snail
+//Return Negative
+
 //Write Number in Expanded Form
 function expandedForm(num) {
   let numStr = num.toString().split('');
