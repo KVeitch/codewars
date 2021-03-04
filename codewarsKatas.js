@@ -1,15 +1,48 @@
 //Snail
 //If you can read this...
-function to_nato(words) {
-	return words
-    .toUpperCase()
-    .replace(/\s/g, '')
-    .split('')
-    .map((l) => phoneticMap[l])
-    .join(' ');
-}
+// function to_nato(words) {
+// 	return words
+//     .toUpperCase()
+//     .replace(/\s/g, '')
+//     .split('')
+//     .map((l) => phoneticMap[l])
+//     .join(' ');
+// }
 
-const phoneticMap = {
+// const phoneticMap = {
+//   A: 'Alfa',
+//   B: 'Bravo',
+//   C: 'Charlie',
+//   D: 'Delta',
+//   E: 'Echo',
+//   F: 'Foxtrot',
+//   G: 'Golf',
+//   H: 'Hotel',
+//   I: 'India',
+//   J: 'Juliett',
+//   K: 'Kilo',
+//   L: 'Lima',
+//   M: 'Mike',
+//   N: 'November',
+//   O: 'Oscar',
+//   P: 'Papa',
+//   Q: 'Quebec',
+//   R: 'Romeo',
+//   S: 'Sierra',
+//   T: 'Tango',
+//   U: 'Uniform',
+//   V: 'Victor',
+//   W: 'Whiskey',
+//   X: 'Xray',
+//   Y: 'Yankee',
+//   Z: 'Zulu',
+//   '.': '.',
+//   '!': '!',
+//   '?': '?',
+// };
+//Refactor
+function to_nato(words) {
+  const phoneticMap = {
   A: 'Alfa',
   B: 'Bravo',
   C: 'Charlie',
@@ -40,6 +73,13 @@ const phoneticMap = {
   '!': '!',
   '?': '?',
 };
+	return words
+    .toUpperCase()
+    .replace(/\s/g, '')
+    .split('')
+    .map((l) => phoneticMap[l])
+    .join(' ');
+}
 //number with 3 roots.
 // function perfectRoots(n) {
 //   return (
