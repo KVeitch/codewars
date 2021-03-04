@@ -1,6 +1,7 @@
 //Snail
 //Return Negative
-const makeNegative = (num) => (num > 0 ? -num : num);
+const makeNegative = (num) => -Math.abs(num)
+// const makeNegative = (num) => (num > 0 ? -num : num);
 
 //Write Number in Expanded Form
 function expandedForm(num) {
