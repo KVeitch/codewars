@@ -1,6 +1,12 @@
 //Snail
 //number with 3 roots.
-
+function perfectRoots(n) {
+  return (
+    Math.sqrt(n) % 1 === 0 &&
+    Math.pow(n, 1 / 4) % 1 === 0 &&
+    Math.pow(n, 1 / 8) % 1 === 0
+  );
+}
 //Return Negative
 const makeNegative = (num) => -Math.abs(num)
 // const makeNegative = (num) => (num > 0 ? -num : num);
