@@ -1,4 +1,6 @@
 //Snail
+//number with 3 roots.
+
 //Return Negative
 const makeNegative = (num) => -Math.abs(num)
 // const makeNegative = (num) => (num > 0 ? -num : num);
