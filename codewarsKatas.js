@@ -1,11 +1,16 @@
 //Snail
 //If you can read this...
 function to_nato(words) {
-  console.log(words.split(' ').map((str) => str.charAt(0)));
+	return words
+    .toUpperCase()
+    .replace(/\s/g, '')
+    .split('')
+    .map((l) => phoneticMap[l])
+    .join(' ');
 }
 
 const phoneticMap = {
-  A: 'Alpha',
+  A: 'Alfa',
   B: 'Bravo',
   C: 'Charlie',
   D: 'Delta',
@@ -28,7 +33,7 @@ const phoneticMap = {
   U: 'Uniform',
   V: 'Victor',
   W: 'Whiskey',
-  X: 'X-ray',
+  X: 'Xray',
   Y: 'Yankee',
   Z: 'Zulu',
   '.': '.',
