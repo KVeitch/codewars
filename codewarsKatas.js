@@ -1,4 +1,5 @@
 //Snail
+// Convert an array of strings to array of numbers
 //If you can read this...
 // function to_nato(words) {
 // 	return words
