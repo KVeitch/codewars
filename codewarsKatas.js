@@ -1,5 +1,8 @@
 //Snail
 // Convert an array of strings to array of numbers
+function toNumberArray(stringarray) {
+  return stringarray.map((n) => parseFloat(n));
+}
 //If you can read this...
 // function to_nato(words) {
 // 	return words
