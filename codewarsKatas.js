@@ -1,6 +1,9 @@
 //Snail
 //Beginner Series #1 School Paperwork
-
+function paperwork(n, m) {
+  if (m <= 0 || n <= 0) return 0;
+  return m * n;
+}
 // Convert an array of strings to array of numbers
 function toNumberArray(stringarray) {
   return stringarray.map((n) => parseFloat(n));
