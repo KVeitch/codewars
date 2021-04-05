@@ -1,8 +1,10 @@
 //Snail
 //Price of Mangoes
-function mango(q, p) {
-  return (2 * Math.floor(q / 3) + (q % 3)) * p;
-}
+// function mango(q, p) {
+//   return (2 * Math.floor(q / 3) + (q % 3)) * p;
+// }
+//Refactor
+const mango = (q, p) => (2 * Math.floor(q / 3) + (q % 3)) * p;
 //Beginner Series #1 School Paperwork
 function paperwork(n, m) {
   if (m <= 0 || n <= 0) return 0;
