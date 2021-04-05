@@ -1,6 +1,8 @@
 //Snail
 //Price of Mangoes
-
+function mango(q, p) {
+  return (2 * Math.floor(q / 3) + (q % 3)) * p;
+}
 //Beginner Series #1 School Paperwork
 function paperwork(n, m) {
   if (m <= 0 || n <= 0) return 0;
@@ -54,37 +56,37 @@ function toNumberArray(stringarray) {
 //Refactor
 function to_nato(words) {
   const phoneticMap = {
-  A: 'Alfa',
-  B: 'Bravo',
-  C: 'Charlie',
-  D: 'Delta',
-  E: 'Echo',
-  F: 'Foxtrot',
-  G: 'Golf',
-  H: 'Hotel',
-  I: 'India',
-  J: 'Juliett',
-  K: 'Kilo',
-  L: 'Lima',
-  M: 'Mike',
-  N: 'November',
-  O: 'Oscar',
-  P: 'Papa',
-  Q: 'Quebec',
-  R: 'Romeo',
-  S: 'Sierra',
-  T: 'Tango',
-  U: 'Uniform',
-  V: 'Victor',
-  W: 'Whiskey',
-  X: 'Xray',
-  Y: 'Yankee',
-  Z: 'Zulu',
-  '.': '.',
-  '!': '!',
-  '?': '?',
-};
-	return words
+    A: 'Alfa',
+    B: 'Bravo',
+    C: 'Charlie',
+    D: 'Delta',
+    E: 'Echo',
+    F: 'Foxtrot',
+    G: 'Golf',
+    H: 'Hotel',
+    I: 'India',
+    J: 'Juliett',
+    K: 'Kilo',
+    L: 'Lima',
+    M: 'Mike',
+    N: 'November',
+    O: 'Oscar',
+    P: 'Papa',
+    Q: 'Quebec',
+    R: 'Romeo',
+    S: 'Sierra',
+    T: 'Tango',
+    U: 'Uniform',
+    V: 'Victor',
+    W: 'Whiskey',
+    X: 'Xray',
+    Y: 'Yankee',
+    Z: 'Zulu',
+    '.': '.',
+    '!': '!',
+    '?': '?',
+  };
+  return words
     .toUpperCase()
     .replace(/\s/g, '')
     .split('')
@@ -104,7 +106,7 @@ function perfectRoots(n) {
   return Math.pow(n, 1 / 8) % 1 === 0;
 }
 //Return Negative
-const makeNegative = (num) => -Math.abs(num)
+const makeNegative = (num) => -Math.abs(num);
 // const makeNegative = (num) => (num > 0 ? -num : num);
 
 //Write Number in Expanded Form
