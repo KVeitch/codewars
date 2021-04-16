@@ -1,5 +1,8 @@
 //Snail
 //JavaScript Array Filter
+function getEvenNumbers(numbersArray) {
+  return numbersArray.filter((num) => num % 2 === 0);
+}
 
 //Substituting Variables Into Strings: Padded Numbers
 function solution(value) {
