@@ -1,7 +1,8 @@
 //Snail
 //Twice as old
-const twiceAsOld = (d, s) => (d - s > s ? d - 2 * s : -(d - 2 * s));
-
+//const twiceAsOld = (d, s) => (d - s > s ? d - 2 * s : -(d - 2 * s));
+//refactor
+const twiceAsOld = (d, s) => Math.abs(d - 2 * s);
 //Price of Mangoes
 // function mango(q, p) {
 //   return (2 * Math.floor(q / 3) + (q % 3)) * p;
