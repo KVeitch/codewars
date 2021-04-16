@@ -1,6 +1,6 @@
 //Snail
 //Twice as old
-
+const twiceAsOld = (d, s) => (d - s > s ? d - 2 * s : -(d - 2 * s));
 
 //Price of Mangoes
 // function mango(q, p) {
