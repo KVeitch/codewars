@@ -1,4 +1,7 @@
 //Snail
+//Twice as old
+
+
 //Price of Mangoes
 // function mango(q, p) {
 //   return (2 * Math.floor(q / 3) + (q % 3)) * p;
