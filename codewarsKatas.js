@@ -1,4 +1,6 @@
 //Snail
+//Substituting Variables Into Strings: Padded Numbers
+
 //Twice as old
 //const twiceAsOld = (d, s) => (d - s > s ? d - 2 * s : -(d - 2 * s));
 //refactor
